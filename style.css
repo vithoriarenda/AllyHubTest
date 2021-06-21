@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1.2rem;
+  font-family: Arial;
+}
+
+body {
+    background-color: #ffff;
+    margin-bottom: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+th {
+    color: black;
+    background-color: rgb(181, 181, 250);
+}
+
+td {
+    text-align: center;
+    background-color: rgb(212, 212, 255);
+}
+
+th, td {
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+  
+.menu {
+    display: flex;
+}
+  
+.menu li {
+    margin-left: 25px;
+}
+  
+.menu li, a {
+    font-family: 'Raleway', sans-serif;
+    display: block;
+    padding: 10px;
+}
+
+.logo {
+    width: 250px;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+.first-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+fieldset {
+    border: 0;
+}
+
+input {
+    border-radius: 5px;
+}
+
+.form-area {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 80px;
+}
+
+.campo{
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    display: block;
+}
+
+.fieldset.grupo campo {
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"], .campo input[type="date"] {
+    text-align: center;
+    width: 300px;
+    height: 30px;
+    border: 1px solid;
+    box-shadow: 2px 2px 2px #054f77;
+}
+
+.btncadastrar {
+    color: white;
+    background-color: blue;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #054f77;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.btncadastrar:hover {
+    background-color: black;
+}
+
+.second-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    text-align: center;
+    margin-top: 160px;
+}
+
+.search {
+    text-align: center;
+    margin-top: 40px;
+}
+
+input[type="search"] {
+    text-align: left;
+    width: 400px;
+    height: 30px;
+}
+
+.btnbuscar {
+    width: 20px;
+    background-color: black;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px #054f77;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.btnbuscar:hover {
+    background-color: blue;
+}
+
+table {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 2px solid;
+}
+
+.table-area {
+    font-family: 'Raleway', sans-serif;
+}

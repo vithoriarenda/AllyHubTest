@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ally Hub | Cursos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-area">
+            <a href="index.html">
+            <img src="img/logo.png" alt="Logotipo da Ally Hub" class="logo">
+            </a>
+        </div>
+
+        <nav>
+            <ul class="menu">
+            <li><a href="index.html"><strong>Sobre</strong></a></li>
+            <li><a href="index.html"><strong>Cursos</strong></a></li>
+            <li><a href="index.html"><strong>Contato</strong></a></li>
+            </ul>
+        </nav>
+      </header>
+
+    <h1 class="first-title"><strong>CADASTRO</strong></h1>
+        <p>Complete suas informações!</p>
+
+        <form class="form-area" method="post">
+        <fieldset>
+            <div class="campo">
+                <label for="nome" class="nome-field"><strong>Nome:</strong></label>
+                <input type="text" class="input-field" name="nome" id="nome" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="data" class="data-field"><strong>Data de início:</strong></label>
+                <input type="date" class="input-field" name="data-inicio" id="datainicio" placeholder="dd/mm/aaaa" required>
+            </div>
+
+            <div class="campo">
+                <label for="data" class="data-field"><strong>Data de término:</strong></label>
+                <input type="date" class="input-field" name="data-fim" id="datafim" placeholder="dd/mm/aaaa" required>
+            </div>
+
+            <div class="campo">
+                <label for="week" class="week-field"><strong>Duração (semanas):</strong></label>
+                <input type="text" class="input-field" name="semanas" id="semanas" placeholder="Digite a duração do curso" required>
+            </div>
+
+            <div class="campo">
+                <label for="description" class="desc-field"><strong>Descrição:</strong></label>
+                <input type="text" class="input-field" name="description" id="description" placeholder="Digite o curso desejado" required>
+            </div>
+
+                <input type="submit" class="btncadastrar" value="Cadastrar" onclick="cadastraCurso()">
+        </fieldset>
+        </form>
+
+    <h1 class="second-title"><strong>LISTA DE CURSOS</strong></h1>
+        <p>Veja um por um na lista ou use a barra de pesquisas!</p>
+
+        <form class="search">
+            <input type="search" name="search" placeholder="Pesquisar por nome" list="nomes-cursos">
+            <img src="img/lupa.png" class="btnbuscar">
+
+            <datalist id="nomes-cursos">
+                <option value="Python"></option>
+                <option value="MySQL"></option>
+                <option value="Javascript"></option>
+                <option value="Algoritmos"></option>
+                <option value="Java"></option>
+                <option value="PHP"></option>
+                <option value="C#"></option>
+            </datalist>
+        </form>
+    
+        <table class="table-area">
+
+            <tr>
+                <th>Nome</th>
+                <th>Duração</th>
+                <th>Início</th>
+                <th>Término</th>
+            </tr>
+
+            <tr>
+                <td>Javascript</td>
+                <td>11</td>
+                <td>01/02/21</td>
+                <td>31/12/21</td>
+            </tr>
+
+            <tr>
+                <td>Python</td>
+                <td>13</td>
+                <td>01/02/21</td>
+                <td>31/12/21</td>
+            </tr>
+
+            <tr>
+                <td>MySQL</td>
+                <td>15</td>
+                <td>01/02/21</td>
+                <td>31/12/21</td>
+            </tr>
+
+            <tr>
+                <td>Java</td>
+                <td>17</td>
+                <td>01/02/21</td>
+                <td>31/12/21</td>
+            </tr>
+
+            <tr>
+                <td>Algoritmos</td>
+                <td>19</td>
+                <td>01/02/21</td>
+                <td>31/12/21</td>
+            </tr>
+
+            <tr>
+                <td>PHP</td>
+                <td>21</td>
+                <td>01/02/21</td>
+                <td>31/12/21</td>
+            </tr>
+
+            <tr>
+                <td>C#</td>
+                <td>23</td>
+                <td>01/02/21</td>
+                <td>31/12/21</td>
+            </tr>
+
+        </table>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
